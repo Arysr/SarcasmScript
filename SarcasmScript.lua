@@ -3,6 +3,8 @@ require("natives-1640181023")
 require("natives-1627063482")
 --Made by Axhov#0001
 
+menu.divider(menu.my_root(), "Sarcasm Script")
+
 labelpresets_root = menu.list(menu.my_root(), "Label presets", {"axhovlabelpresets"}, "")
 
 meta_root = menu.list(menu.my_root(), "Script Meta", {""}, "Details about the script")
@@ -85,7 +87,7 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("UEV_APERN", "this aint your car you fuck nugget")
 	do_label_preset("UGC_FL_UNEX", "The hamster powering our servers got typhus so The Rockstar game services are unavailable right now.")
 	do_label_preset("USJFAIL", "YOU SUCK") -- stunt jump failed
-	do_label_preset("HUD_SAVDNWARN", "Our rats nest of servers are down - AGAIN. Probably. Or its your game. Saving failed.")
+	do_label_preset("HUD_SAVDNWARN", "Our rats nest of servers are down - AGAIN. Probably. Or its your game. Saving failed.") 
 	do_label_preset("PCARD_MENTAL_STATE", "Am I crazy?")
 	do_label_preset("PCARD_MENTAL_STATE_0", "Does that make me crazy?")
 	do_label_preset("PCARD_MENTAL_STATE_1", "GET OUT OF MY HEAD GET OUT OF MY HEAD")
@@ -101,9 +103,9 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("PM_INF_STOREC", "Just a reminder: it costs us nothing to raise your bank balance and we make a billion dollars every year on this.")
 	do_label_preset("PM_CESP", "Scam Starter Pack")
 	do_label_preset("PM_INF_CHGB", "Finds another session to lose your faith in humanity")
-	do_label_preset("WT_PIST_AP", "Whirlpool WMH53521 Microwave")
-	do_label_preset("WTD_PIST_AP", "Bought this over the range model to match the new Whirlpool gas range and new Whirlpool side by side refrigerator. The old fridge was on its last leg, and my wife wanted a SS one, so we had to get a matching stove, plus finally get a gas one, then of course a matching microwave!")
-	do_label_preset("WCD_MK1_LOCK", "walter white clash royale card")
+	do_label_preset("WT_PIST_AP", "Whirlpool WMH53521 Microwave") -- AP pistol name
+	do_label_preset("WTD_PIST_AP", "Bought this over the range model to match the new Whirlpool gas range and new Whirlpool side by side refrigerator. The old fridge was on its last leg, and my wife wanted a SS one, so we had to get a matching stove, plus finally get a gas one, then of course a matching microwave!") --AP pistol description in ammunation - real review from google
+	do_label_preset("WCD_MK1_LOCK", "walter white clash royale card") --Replaces the locked weapons in ammunation when you have the mk2 variant of them
 	do_label_preset("GOODBOYRMDR", "Alert: mmmmmff bugre food")
 	do_label_preset("PM_H_D1_2", "You have no friends and you're a LOSER!")
 	do_label_preset("CMRC_STORE_OPEN", "Go play a better game")
@@ -113,11 +115,11 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("CMRC_STORE_OPEN", "Go play a better game")
 	do_label_preset("CMRC_GOTOSTORE", "ALERT FROM ROCKSTAR")
 	do_label_preset("BLIP_OTHPLYR", "Other Morons")
-	do_label_preset("WTD_MINIGUN", "For those who can't aim.")
-	do_label_preset("WT_MINIGUN", "Large Multi-Rotating-Barrel Firearm")
-	do_label_preset("BBT_COLTICKB", "<C>~a~</C>~s~ has googled 'big boobs'.")
-	do_label_preset("BBT_STTICKB", "<C>~a~</C> upgraded to googling 'sex porn'.")
-	do_label_preset("GB_TICK_KILLC", "Welcome to SecuroServ CEO Services. You are tasked with 'servicing' your CEO.")
+	do_label_preset("WTD_MINIGUN", "For those who can't aim.")-- Minigun description
+	do_label_preset("WT_MINIGUN", "Large Multi-Rotating-Barrel Firearm")--Minigun name
+	do_label_preset("BBT_COLTICKB", "<C>~a~</C>~s~ has googled 'big boobs'.") -- Collection of business battle goods
+	do_label_preset("BBT_STTICKB", "<C>~a~</C> upgraded to googling 'sex porn'.") --delivering of business battle goods
+	do_label_preset("GB_TXTMSGCGN", "Welcome to SecuroServ CEO Services. You are tasked with 'servicing' your CEO.") -- Replaces the text when joining a ceo
 	do_label_preset("GB_UBECOME", "~a~ ~s~has registered as a sex offender/VIP.")
 	do_label_preset("GB_UBECOMEB", "~a~ ~s~has registered as a sex offender/MC President.")
 	do_label_preset("GB_UBECOMEC", "~a~ ~s~has registered as a sex offender/CEO.")
@@ -127,30 +129,30 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("PCARD_STEALTH_2", "ding ding ding ding")
 	do_label_preset("PCARD_STEALTH_3", "ding ding ding ding")
 	do_label_preset("PCARD_STEALTH_4", "ding ding ding ding")
-	do_label_preset("RANK_GFM_15", "Traffic Law Violator")
-	do_label_preset("RANK_GFM_11", "Racist")
-	do_label_preset("RANK_GFM_13", "Nazi")
-	do_label_preset("RANK_GFM_17", "Associate of Epstein")
-	do_label_preset("RANK_GFM_19", "Child Molester")
-	do_label_preset("RANK_GFM_3", "Sex Offender")
-	do_label_preset("RANK_GFM_5", "Serial Rapist")
-	do_label_preset("RANK_GFM_7", "Hears Voices")
-	do_label_preset("RANK_GFM_9", "War Criminal")
-	do_label_preset("RANK_GFM_21", "Humanitarian Treasoner")
+	do_label_preset("RANK_GFM_15", "Traffic Law Violator")-----Level replacements
+	do_label_preset("RANK_GFM_11", "Racist")----------
+	do_label_preset("RANK_GFM_13", "Nazi")------
+	do_label_preset("RANK_GFM_17", "Associate of Epstein")-------
+	do_label_preset("RANK_GFM_19", "Child Molester")---------
+	do_label_preset("RANK_GFM_3", "Sex Offender")--------
+	do_label_preset("RANK_GFM_5", "Serial Rapist")----------
+	do_label_preset("RANK_GFM_7", "Hears Voices")---------
+	do_label_preset("RANK_GFM_9", "War Criminal")----------
+	do_label_preset("RANK_GFM_21", "Humanitarian Treasoner")------End level replacements
 	do_label_preset("PCARD_STAM_0", "fat")
 	do_label_preset("PCARD_STAM_1", "fat")
 	do_label_preset("PCARD_STAM_2", "fat")
 	do_label_preset("PCARD_STAM_3", "fat as fuck lol")
 	do_label_preset("PCARD_STAM_4", "Male Pornstar")
-	do_label_preset("PEG_TXT_2", "SAMIR BROKE YOUR CAR")
+	do_label_preset("PEG_TXT_2", "SAMIR BROKE YOUR CAR")--Pegasus I think
 	do_label_preset("PEG_RECLAIM", "Message from Pegasus: FUCK YOU GET OUT")
-	do_label_preset("GB_RECLAIM", "SecuroServ: hehe our vehicle now")
+	do_label_preset("GB_RECLAIM", "SecuroServ: hehe our vehicle now") --getting kicked out of a SecServ vehicle
 	do_label_preset("GB_TXT_2", "~s~SecuroServ surveillance indicates Samir broke your vehicle.")
 	do_label_preset("GB_TXT_1", "~s~SecuroServ surveillance indicates that you're a moron.")
 	do_label_preset("PIM_MAGH0AC", "Register as a Sex Offender.")
 	do_label_preset("PIM_HKILS", "Become the next Ronnie McNutt")
 	do_label_preset("PIM_TITLE1", "Kingpin Menu")
-	do_label_preset("WT_GL", "Acer Nitro Gaming Laptop")
+	do_label_preset("WT_GL", "Acer Nitro Gaming Laptop") --Grenade launcher
 	do_label_preset("WTD_GL", "Today when I walked into my economics class I saw something I dread every time I close my eyes. Someone had brought their new gaming laptop to class. The Forklift he used to bring it was still running idle at the back. I started sweating as I sat down and gazed over at the 700lb beast that was his laptop. He had already reinforced his desk with steel support beams and was in the process of finding an outlet for a power cable thicker than Amy Schumer's thigh. I start shaking. I keep telling myself I'm going to be alright and that there's nothing to worry about. He somehow finds a fucking outlet. Tears are running down my cheeks as I send my last texts to my family saying I love them. The teacher starts the lecture, and the student turns his laptop on. The colored lights on his RGB Backlit keyboard flare to life like a nuclear flash, and a deep humming fills my ears and shakes my very soul. The entire city power grid goes dark. The classroom begins to shake as the massive fans begin to spin. In mere seconds my world has gone from vibrant life, to a dark, earth shattering void where my body is getting torn apart by the 150mph gale force winds and the 500 decibel groan of the cooling fans. As my body finally surrenders, I weep, as my school and my city go under. I fucking hate gaming laptops.")
 	do_label_preset("WT_RAYCARBINE", "This gun unironically sucks")
 	do_label_preset("WT_SNSPISTOL", "LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--LONG-ANNOYING-NAME--")
@@ -163,16 +165,16 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("WM_TINT6", "Why")
 	do_label_preset("WM_TINT7", "Why")
 	do_label_preset("WM_TINTDF", "ONLY USE THIS ONE")
-	do_label_preset("RESPAWN_W_MP", "fooga ooga looga womp")
+	do_label_preset("RESPAWN_W_MP", "fooga ooga looga womp")--Wasted
 	do_label_preset("DM_U_SUIC", "You seem to be dead.")
 	do_label_preset("FMSPR_HLP_15", "WARNING: EXTREME SENTINEL PLANET")
-	do_label_preset("NO_TIMES_WANTED_LEVEL", "Times arrested for prostitution")
-	do_label_preset("CELL_127", "Hector Salamanca")
+	do_label_preset("NO_TIMES_WANTED_LEVEL", "Times arrested for prostitution")-- times wanted stat
+	do_label_preset("CELL_127", "Hector Salamanca") --replaces Simeons text when you drive past the dealership
 	do_label_preset("SREPO_INITT", "ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding.")
 	do_label_preset("ATTK_ILLICIT", "Don't drink the water... They put something in it! to- to make you forget. I don't even remember how I got here.")
 	do_label_preset("CASINOMAIL", "They want me dead, don't they? those damn skinwalkers. I keep seeing something, in the corner of my eye. I always try to look at it but it turns out to always be nothing. I keep hearing voices. they keep calling me 'lester the molester' and telling me to kidnap the governer.")
 	do_label_preset("SREPO_FIFTYMH", "You have slipped into the infinite darkness. your eyes begin to rot, your consciousness still trapped in your calcium vessel for millenia after your death. You scream for help, but your vocal coords have long since turned to dust and reclaimed to the dirt.")
-	do_label_preset("YACHTMAIL", "Buy a yacht you broke fucker ~b~<u>docktease.com</u>~w~~s~.")
+	do_label_preset("YACHTMAIL", "Buy a yacht you broke fucker ~b~<u>docktease.com</u>~w~~s~.") -- yacht email
 	do_label_preset("OPPRESSOR2", "Pussybike MK II")
 	do_label_preset("CSHOP_ITEMON", "You just wasted your money.")
 	do_label_preset("CSHOP_ITEMON2", "You just wasted your money.")
