@@ -1,6 +1,5 @@
 util.keep_running()
-require("natives-1640181023")
-require("natives-1627063482")
+require("natives-1663599433")
 --Made by Axhov#0001
 
 menu.divider(menu.my_root(), "Sarcasm Script")
@@ -15,29 +14,28 @@ menu.hyperlink(meta_root, "Suggest features", "https://docs.google.com/forms/d/e
 
 credits_root = menu.list(meta_root, "Credits", {"credits"}, "")
 
-menu.action(credits_root, "Lance (lancescript dev)", {}, "Created the function that this script uses", function(on_click)
+menu.action(credits_root, "Lance (lancescript dev)", {}, "Created the function that this script uses", function()
 end)
 
-menu.action(credits_root, "aaronlink127", {}, "uploaded the label repository that made this script have many more changes", function(on_click)
+menu.action(credits_root, "aaronlink127", {}, "uploaded the label repository that made this script have many more changes", function()
 end)
 
-menu.action(credits_root, "Vsus", {}, "Suggested a change that prevents you being kicked from the lobby that was a byproduct of the scripts first version", function(on_click)
+menu.action(credits_root, "Vsus", {}, "Suggested a change that prevents you being kicked from the lobby that was a byproduct of the scripts first version", function()
 end)
 
 menu.action(credits_root, "Nowiry", {}, "Helped", function(on_click)
 end)
 
+util.keep_running()
 
-
-function do_label_preset(label, text)
+function do_label_preset(label, text) --lancescript function
     menu.trigger_commands("addlabel " .. label)
     local prep = "edit" .. string.gsub(label, "_", "") .. " " .. text
     menu.trigger_commands(prep)
-    menu.focus(labelpresets_root)
 	util.yield(20)
 end
 
-menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a short period as it does its thing. Will notify you when it is done.", function(on_click)
+menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a short period as it does its thing. Will notify you when it is done. Might throw an error that a label doesn't exist but that is GTA's fault, not mine.", function()
     do_label_preset("TICK_DIED", "~a~~HUD_COLOUR_WHITE~ fucking died.")
 	do_label_preset("TICK_LEFT", "~a~~HUD_COLOUR_WHITE~ wised up and left.") --player left
 	do_label_preset("HUD_LBD_FMF", "AIDS Online (walter whjit, ~1~)")
@@ -54,11 +52,11 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("PCARD_JOIN_GAME", "Pretending to do something...")
 	do_label_preset("PCARD_CLEAN_PLAYER", "Moron") --clean player
 	do_label_preset("PCARD_DRIVING", "Skill possessed for the operation of an automobile") --driving skill
-	do_label_preset("PCARD_DRIVE_0", "SAMIR")
-	do_label_preset("PCARD_DRIVE_1", "Teenager")
+	do_label_preset("PCARD_DRIVE_0", "SAMIR (he broke the car)")
+	do_label_preset("PCARD_DRIVE_1", "Paul Walker")
 	do_label_preset("PCARD_DRIVE_2", "Grandmother")
-	do_label_preset("PCARD_DRIVE_3", "Paul Walker")
-	do_label_preset("PCARD_DRIVE_4", "Better than your mom")
+	do_label_preset("PCARD_DRIVE_3", "PISS")
+	do_label_preset("PCARD_DRIVE_4", "opposite of bad")
 	do_label_preset("MP_CHAT_ALL", "@everyone")
 	do_label_preset("PCARD_FLYING", "Skill possessed for the operation of aircraft")
 	do_label_preset("PCARD_FLYING_0", "Paper Airplane Pilot")
@@ -170,11 +168,21 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("FMSPR_HLP_15", "WARNING: EXTREME SENTINEL PLANET")
 	do_label_preset("NO_TIMES_WANTED_LEVEL", "Times arrested for prostitution")-- times wanted stat
 	do_label_preset("CELL_127", "Hector Salamanca") --replaces Simeons text when you drive past the dealership
+	do_label_preset("CELL_CLTEST1", "ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding")
+	do_label_preset("CELL_CL01", "ding.")
+	do_label_preset("CELL_CL02", "ding.")
+	do_label_preset("CELL_CL03", "ding.")
+	do_label_preset("CELL_CL04", "ding.")
+	do_label_preset("CELL_CL05", "ding.")
+	do_label_preset("CELL_CL06", "ding.")
+	do_label_preset("CELL_CL07", "ding.")
+	do_label_preset("CELL_CL08", "ding.")
+	do_label_preset("CELL_CL09", "ding.")
 	do_label_preset("SREPO_INITT", "ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding ding.")
 	do_label_preset("ATTK_ILLICIT", "Don't drink the water... They put something in it! to- to make you forget. I don't even remember how I got here.")
 	do_label_preset("CASINOMAIL", "They want me dead, don't they? those damn skinwalkers. I keep seeing something, in the corner of my eye. I always try to look at it but it turns out to always be nothing. I keep hearing voices. they keep calling me 'lester the molester' and telling me to kidnap the governer.")
 	do_label_preset("SREPO_FIFTYMH", "You have slipped into the infinite darkness. your eyes begin to rot, your consciousness still trapped in your calcium vessel for millenia after your death. You scream for help, but your vocal coords have long since turned to dust and reclaimed to the dirt.")
-	do_label_preset("YACHTMAIL", "Buy a yacht you broke fucker ~b~<u>docktease.com</u>~w~~s~.") -- yacht email
+	do_label_preset("YACHTMAIL", "Buy a yacht you broke piece of fucking shit ~b~<u>docktease.com</u>~w~~s~.") -- yacht email
 	do_label_preset("OPPRESSOR2", "Pussybike MK II")
 	do_label_preset("CSHOP_ITEMON", "You just wasted your money.")
 	do_label_preset("CSHOP_ITEMON2", "You just wasted your money.")
@@ -184,5 +192,153 @@ menu.action(labelpresets_root, "Execute Script", {}, "Will kill your fps for a s
 	do_label_preset("CSHOP_ITEMONDLC", "You just wasted your money.")
 	do_label_preset("CSHOP_ITEMON_S", "You just wasted your money.")
 	do_label_preset("CSHOP_LOCK", "Piss off. Don't you see the lock icon?")
+	do_label_preset("FM_TXT_BNTY3B",  "~a~ left and took the kids with them")
+	do_label_preset("ATTK_CNTRBND", "Why isn't this entire state on lockdown and being invaded by the national guard to subdue all the psychopaths? or maybe this is where all the psychopaths are sent, and you're currently in hell. Maybe you are the punishment for the NPCs? Great thing to ponder.")
+	do_label_preset("ATTK_CNTRBND", "Why isn't this entire state on lockdown and being invaded by the national guard to subdue all the psychopaths? or maybe this is where all the psychopaths are sent, and you're currently in hell. Maybe you are the punishment for the NPCs? Great thing to ponder.")
+	do_label_preset("PBOX", "Penis Hill")
+	do_label_preset("PM_INF_ALJB", "Pick from a bunch of mildly fun activities that pay you absolute shit because we don't know how to balance pay in this game. ~n~~n~In short, go play cayo, because we know you will. ")
+	do_label_preset("GHO_START", "~a~ ~s~has started a Gang Bang.")
+	do_label_preset("STEAL_MBS", "Why are we here? is heaven even real, or just a figment of our imagination to make us feel better about our impending permanent unconciousness? it also does not make much sense. you live there for eternity in some idealized society where everyone is happy, but that does not satisfy human nature. Human nature evolved soley to be a strong group based species so that we can fuck someone and keep the cycle going. we strive to find the next thing to do or improve within our lives BECAUSE there is a limited time to be happy and have fun. Thinking about things rationally, there is no reason to think that this is not the only bout of conciousness you will ever experience. Where did the billions of years before you come from? what happens after you're gone? your neurons, the biological mass making up your memories and conciousness decay, and you are gone. there is 0 way for you to escape your mortal fleshy biological fallability as far as we know but we like to tell ourselves that it some how can, in this idea of heaven, just to make it not seem so morbid.  We are just the universe experiencing itself. I dont want to be here. But what other choice is there? are there other universes, where the video games or books we have made are just every day life? I wanna go to the pokemon universe so I can fuck all the hot trainers and maybe vapereon, or maybe go to whatever universe that chubby version of samus from that samus x charizard animation is from so I can fuck her too")
+	do_label_preset("SIM_SRM_VEH_IC", "Press ~INPUT_CONTEXT~ for a cock inspection.")
+	do_label_preset("SOUTHERN_WEB", "DOLPHINSEX.COM")
+	do_label_preset("SIM_SRM_M_D_0", "Apply for a SOSACI (State of San Andreas Cock Inspection)")
+	do_label_preset("SIM_SRM_M_O_0", "Apply")
+	do_label_preset("ATTK_GUNRUN", "WWWWWWWWWWWWWWWW")
+	do_label_preset("BANSHEE", "Rindfleisch­etikettierungs­überwachungs­aufgaben­übertragungs­gesetz")
+	do_label_preset("WT_PRCSRIFLE", ".1 Caliber Rifle")
+	do_label_preset("WT_UNARMED", "Fisting")
+	do_label_preset("WCT_SUPP", "quiet gun can attachment")
+	do_label_preset("WC_CLIP_EX", "Noob Rounds")
+	do_label_preset("GOODBOYTICK", "Rockstar Games have corrected your bank balance to ~r~0 GTA$~s~ after an account review. All in-game transactions are currently blocked. Please restart your game to see this change and to re-enable transactions.")
+	do_label_preset("SUM22SCMAIL_TXT", "Click here to join the United States Special Committee on Bondage. ~b~<u>lifeinvader.com</u>~w~~s~.")
+	do_label_preset("FMMC_VHL_6", "Excrement")
+	do_label_preset("SUM22SCMAIL_HLP", "A special event is currently taking place in GTA Online. Join the United States Special Committee on Bondage to gain access.")
+	do_label_preset("AMCH_16", "Snort the longest line of coke.")
+	do_label_preset("AMCH_16SLC", "Coke Snorting")
+	do_label_preset("HUD_COUNTDOWN", "Tieyyrigty Uasacofh oUndu Jnddnesm geurnad")
+	do_label_preset("PM_MP_NO_JOB", "GET A JOB ASSHOLE")
+	do_label_preset("PM_PANE_HLP", "WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? WHAT? ")
+	do_label_preset("UI_FLOW_SO_SOLO_D", "Head into GTA Online by yourself. Only modders can join this session, and available activities will be limited. Basically the worst fucking way to play the game.")
+	do_label_preset("DM_TICK1", "~a~~HUD_COLOUR_WHITE~ shit on you.")
+	do_label_preset("UI_FLOW_OP_CL_D", "It takes a lot of people to bring Los Santos to life, but only a few over worked employees to make a DLC that we will make a billion dollars on. To view a full list of game credits, please visit:~n~~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/gtav/fuckyou~s~~n~~n~To view our full terms of service, visit:~n~~HUD_COLOUR_SOCIAL_CLUB~www.middlefinger.com~s~~~n~~n~and no, you can't click the links, lol. dumbass.")
+	do_label_preset("ACA_HT_START_D", "A Business Battle has started. Board the USS Luxington to access the Goods. Deliver them to the Drop-Off to earn a pat on the back, because YOU DONT OWN A FUCKING NIGHTCLUB YOU RETARD")
+	do_label_preset("ACA_HT_START_N", "A Business Battle has started. Board the USS Luxington to access the Goods. Deliver them to the Drop-Off to earn a pat on the back and a box of shit.")
+	do_label_preset("FM_DROP_START2", "I LOVE CRACK!!!!")
+	menu.trigger_commands("tgame")
 	util.toast("Done.")
 end)
+
+--Yucitus
+
+menu.action(labelpresets_root, "debug option", {}, "randomizes a label from the few ive decided should be randomized", function()
+	randomize_label()
+end)
+
+function mg()
+	menu.trigger_commands("tgame")
+end
+
+
+
+function randomize_label()
+	local m = math.random(1, 9)
+		pluto_switch (m) do
+		case 1:
+			print("1")
+			local lbls = {"Taking forever to load...", "Eating crayons...", "Murdering infants...", "Making 1 bil$ a year doing little to nothing...", "Putting voices in your head...", "?factsabout cheese add [INSERT"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("MP_SPINLOADING", result) --label change here
+			mg()
+			break
+		case 2:
+			print("2")
+			local lbls = {"Fuck you.", "BUY SHARK CARDS ASSHOLE", "Go play a better game", "tom bergermon", "ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR! ERROR!", "meow", "I hate children", "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("CMRC_STORE_OPEN", result) --label change here
+			mg()
+			break
+		case 3:
+			print("3")
+			local lbls = {"AIDS Online (Pubic, ~1~)", "AIDS Online (Error, ~1~)", "AIDS Online (Pubic, 272)", "Skyrim Online (Public, ~1~)", "Apex Legends: (~1~ Remaining)"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("HUD_LBD_FMP", result) --label change here
+			mg()
+			break
+		case 4:
+			print("4")
+			local lbls = {"List of registered sex offenders", "List of Epstein Island attendees", "List of the mentally deficient", "Morons", "List of Kingpin Menu users", "Divinely gifted 28 flies"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("PM_PLYRS", result) --label change here
+			mg()
+			break
+		case 5:
+			print("5")
+			local lbls = {"Used the double gulp cup for the fucking slurpee", "Room temp IQ", "Trump Supporter (!Known terrorist!)", "Idiot", "Still plays this game", "Domestic Terrorist", "Hates Children"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("PCARD_CLEAN_PLAYER", result) --label change here 
+			mg()
+			break
+		case 6:
+			print("6")
+			local lbls = {"Alert: I hate children", "Alert: mmmmmff bugre food", "Alert: Hey is this thing on? Why do my balls itchy", "can U get pregernet????", "Alert: JESSIE im fuckjcking ghomeless jessei", "Alert: SKYLARE, where is the BOSE SPONSORSHIP PROMOCODE", "Alert: memph", "Why do the police send 600 men, helicopters, and cars just to kill 1 dude, what if you were on that team that was destined to die? you wouldnt go, would you? shit is stupid. also who the fuck pays for it", "Alert: eeereeweewwefwewefwefwefwef", "Alert: meow"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("GOODBOYRMDR", result) --good sport message
+			mg()
+			break
+		case 7:
+			print("7")
+			local lbls = {"Muerto", "OBLITERATED", "Error: Script Host Not Responding", "fuck", "COCK!!!!"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("RESPAWN_W_MP", result) --label change here
+			mg()
+			break
+		case 8:
+			print("8")
+			local lbls = {"View all the degenarate rats in your lobby.", "Twelve. Twelve. Twelve. Twelve. Twelve. Twelve. Twelve. Twelve. Twelve. Twelve. Twelve.", "US Government Kill List", "I LIKE CEREAL", "I like chocolate milk", "if you can read this then FUCK YOU", "In case of an investigation by any federal entity or similar, I do not have any involvement with this group or with the people in it, I do not know how I am here, probably added by a third party, I do not support any actions by members of this group."}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("PM_INF_PLYB", result) --label change here
+			mg()
+			break
+		case 9:
+			print("9")
+			local lbls = {"OBLITERATED", "COCK!!!!", "lol you died", "Wsassted", "MMMMMMMMMMMMMMMMMMMMM", "wastaeasd"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("RESPAWN_W_MP", result) --label change here
+			mg()
+			break
+		case 10:
+			local lbls = {"ACHTUNG: Das Spiel läuft Gefahr, deutsch zu werden", "WARNING: g"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("PSYCHO_WARN1", result) --label change here
+			mg()
+			break
+		case 11:
+			local lbls = {"Trash Online", "penis", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "WARNING: ACCESS VIOLATION. brick_downtown_12.ytd COULD NOT BE LOADED!"}
+			local result = lbls[math.random(#lbls)]
+			do_label_preset("FE_THDR_GTAO", result) --label change here
+			mg()
+			break
+			
+	end
+end
+
+while true do
+    if NETWORK.NETWORK_IS_IN_SESSION() == false then
+        while NETWORK.NETWORK_IS_IN_SESSION() == false or util.is_session_transition_active() do
+            util.yield(100)
+        end
+		randomize_label()
+    end
+    util.yield()
+end
+
+while true do --currently unused, will be used in the future
+	local trash = math.random(0, 4000)
+	util.toast("trash")
+	pluto_switch (trash) do
+	case 1:
+		util.show_corner_help("penis music")
+		break
+	end
+util.yield()
+end
